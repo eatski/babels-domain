@@ -7,22 +7,5 @@ mod tests {
     }
 }
 
-pub enum Action {
-    CarryIn,Build,Steal
-}
-
-pub enum Stage {
-    Flag,Clock,Stand
-}
-
-pub enum Material {
-    Black,White
-}
-
-pub enum Role {
-    Official(City),Resident(City),Symmetrist,Clockmaker
-}
-
-pub enum City {
-    Morning,Night
-} 
+pub mod model;
+pub mod resolve;
